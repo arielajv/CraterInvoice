@@ -50,7 +50,7 @@ public class UIComponentsTest {
     }
     @Then("I verify a link titled {string}")
     public void i_verify_a_link_titled(String string) {
-        assertEquals("Forgot Password", login.login_page_forgotPassword_link.getText());
+        assertEquals("Forgot Password?", login.login_page_forgotPassword_link.getText());
     }
     @Then("I view the Login button placed underneath the forgot password")
     public void i_view_the_login_button_placed_underneath_the_forgot_password() {
