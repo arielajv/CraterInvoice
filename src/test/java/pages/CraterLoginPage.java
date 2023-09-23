@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
+import java.util.List;
+
 public class CraterLoginPage {
     public CraterLoginPage() {
         PageFactory.initElements(Driver.getDriver(), this);
@@ -40,6 +42,14 @@ public class CraterLoginPage {
     @FindBy(xpath = "//p[contains(text(), 'Crater helps you')]")
     public WebElement login_page_craterHelpsYou_text;
 
+    @FindBy(xpath = "//span[text()='Field is required']")
+    public List<WebElement> login_page_fieldRequired_Messages;
+
+    @FindBy(xpath = "//p[text()='These credentials do not match our records.']")
+    public WebElement login_page_invalidLogin_message;
+
+    @FindBy (xpath = "(//p[text()='These credentials do not match our records.'] | //span[text()='Field is required'])")
+    public List <WebElement> login_page_all_Error_messages;
 
 
 
