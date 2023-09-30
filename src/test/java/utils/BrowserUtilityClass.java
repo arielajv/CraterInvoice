@@ -25,4 +25,9 @@ public class BrowserUtilityClass {
     public void waitForAllElementsToBeVisible(List<WebElement> element) {
         wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfAllElements(element));
-    }}
+    }
+    public void waitForElementToBeVisible(WebElement element) {
+        wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(element));
+    }
+}

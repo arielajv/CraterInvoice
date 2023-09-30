@@ -13,4 +13,9 @@ public class DashboardPage {
 
     @FindBy (xpath = "//a[text() = ' Dashboard']")
     public WebElement dashboard_tab;
+
+    @FindBy (xpath = "//p[text()='Logged in successfully.']")
+    public WebElement loggedInSuccess_message;
+
+
 }
