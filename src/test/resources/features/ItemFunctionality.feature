@@ -16,13 +16,15 @@ Feature: Dashboard home page
         And I confirm the pagination has the following control: Left arrow allowing the user navigate to previous pages
         Then I confirm right arrow allowing the user to navigate to the next pages
         And I confirm number indicating the page the user is currently on and the next upcoming page
-        Then I click on I click on the Add Item button
+        Then I click on the Add Item button
 
         @AddItemComponents
         Scenario: As a user, I am able to add a new item
-            When I click on I click on the Add Item button
+            When I navigate to Items tab
+            Then I click on the 'Items' Menu Link
+            Then I click on the Add Item button
             Then I can an directed to the page with Name, Price and Unit dropdown
-            And I confirm that the unit dropdown has 34 options
+            And I confirm that the unit dropdown has 20 options
             Then I confirm that Description is displayed
 
 

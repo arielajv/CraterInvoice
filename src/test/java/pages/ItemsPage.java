@@ -61,17 +61,23 @@ public class ItemsPage {
     @FindBy (xpath = "//button[text()=' Add Item']")
     public WebElement items_addItem_btn;
 
-    @FindBy (xpath = "//input[contains(@name,'name')]")
+    @FindBy (xpath = "/html/body/div/main/div/div/form/div/div/div/div[1]/div/div/input")
     public WebElement items_nameField;
 
     @FindBy (className = "bg-multiselect-caret")
     public WebElement items_unitField;
 
-    @FindBy (className = "v-money")
+    @FindBy (className = "v-money3")
     public WebElement items_priceField;
 
     @FindBy (xpath = "//h3[text()='New Item']")
     public WebElement items_Input_page_newItem_text;
+
+    @FindBy (className = "transition-transform")
+    public WebElement items_unit_dropdown;
+
+    @FindBy (xpath = "//div[text()='Description ']")
+    public WebElement items_description_text;
 
 
 }
