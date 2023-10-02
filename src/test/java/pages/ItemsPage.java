@@ -5,6 +5,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import utils.Driver;
 
+import java.util.List;
+
 public class ItemsPage {
 
     public ItemsPage() { PageFactory.initElements(Driver.getDriver(), this); }
@@ -78,6 +80,9 @@ public class ItemsPage {
 
     @FindBy (xpath = "//div[text()='Description ']")
     public WebElement items_description_text;
+
+    @FindBy (xpath = "(//ul[contains(@class, 'list-none')])[2]/li")
+    public List<WebElement> items_dropdown_options;
 
 
 }

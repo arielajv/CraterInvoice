@@ -131,16 +131,12 @@ public class ItemFunctionality {
 
     @Then("I confirm that the unit dropdown has {int} options")
     public void i_confirm_that_the_unit_dropdown_has_options(Integer int1) {
-        items.items_unit_dropdown.click();
-        List<WebElement> options = items.items_unit_dropdown.findElements(By.tagName("li"));
+        items.items_unit_dropdown.click();;
+        System.out.println(items.items_dropdown_options.size());
         int expectedNumberOfOptions = 20;
-        if (options.equals(expectedNumberOfOptions)) {
-            System.out.println("Dropdown has the expected number of options: " + expectedNumberOfOptions);
-        } else {
-            System.out.println("Dropdown does not have the expected number of options. Actual: " + options +
-                    ", Expected: " + expectedNumberOfOptions);
+        assertEquals(items.items_dropdown_options.size(), expectedNumberOfOptions);
+
         }
-    }
 
     @Then("I confirm that Description is displayed")
     public void i_confirm_that_description_is_displayed() {

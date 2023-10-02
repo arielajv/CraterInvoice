@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c48af62e-7810-4ac6-af6d-f0532b9286e0" name="Changes" comment="Finished UI Components Scenario">
+    <list default="true" id="c48af62e-7810-4ac6-af6d-f0532b9286e0" name="Changes" comment="Finished Add Item Test case">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/tests/ItemFunctionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ItemFunctionality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,12 +207,27 @@
       <option name="project" value="LOCAL" />
       <updated>1696111989661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Finished UI Components Scenario">
+      <created>1696125852913</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1696125852913</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Finished Add Item Test case">
+      <created>1696125987801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1696125987801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished UI Components Scenario!" />
     <MESSAGE value="Finished UI Components Scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished UI Components Scenario" />
+    <MESSAGE value="Finished Add Item Test case" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Add Item Test case" />
   </component>
 </project>
