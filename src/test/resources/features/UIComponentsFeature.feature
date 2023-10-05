@@ -1,6 +1,6 @@
 # new feature
 # Tags: optional
-  @Regression
+  @Regression @Test
 Feature: UI Components
 
   Scenario: User should be able to locate UI components
