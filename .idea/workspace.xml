@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c48af62e-7810-4ac6-af6d-f0532b9286e0" name="Changes" comment="Finished Item Functionality Verification scenario">
+    <list default="true" id="c48af62e-7810-4ac6-af6d-f0532b9286e0" name="Changes" comment="Edited scenarios">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cucumber_Reports/cucumber_report.html" beforeDir="false" afterPath="$PROJECT_DIR$/Cucumber_Reports/cucumber_report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Cucumber_Reports/cucumber_report.json" beforeDir="false" afterPath="$PROJECT_DIR$/Cucumber_Reports/cucumber_report.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/ItemsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/ItemFunctionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/ItemFunctionality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/LoginFunctionality.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/LoginFunctionality.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/testdata/env.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/testdata/env.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginManagement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginManagement.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UIComponentsFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UIComponentsFeature.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,16 +50,15 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: As a user I am able to verify the table is populated">
-    <configuration name="Scenario: As a user I am able to verify the table is populated" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Cucumber Java.Scenario: As a user, I am to verify Items tab functionality">
+    <configuration name="Feature: ItemFunctionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" />
       <option name="GLUE" value="tests" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CraterInvoice" />
-      <option name="NAME_FILTER" value="^As a user I am able to verify the table is populated$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user I am able to verify the table is populated$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user I am able to verify the table is populated" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: ItemFunctionality" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -74,15 +70,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user, I am able to create an item or a service" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: LoginManagement" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/LoginManagement.feature" />
       <option name="GLUE" value="tests" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CraterInvoice" />
-      <option name="NAME_FILTER" value="^As a user\, I am able to create an item or a service$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user\, I am able to create an item or a service$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user, I am able to create an item or a service" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: LoginManagement" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -94,15 +89,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: As a user, I am able to successfully enter Description" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: UIComponentsFeature" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" />
-      <option name="GLUE" value="tests" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/UIComponentsFeature.feature" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CraterInvoice" />
-      <option name="NAME_FILTER" value="^As a user\, I am able to successfully enter Description$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^As a user\, I am able to successfully enter Description$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: As a user, I am able to successfully enter Description" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: UIComponentsFeature" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -117,6 +110,7 @@
     <configuration name="Scenario: As a user, I am to verify Items tab functionality" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" />
+      <option name="GLUE" value="tests" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="CraterInvoice" />
       <option name="NAME_FILTER" value="^As a user\, I am to verify Items tab functionality$" />
@@ -150,11 +144,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: As a user I am able to verify the table is populated" />
-        <item itemvalue="JUnit.TestRunner" />
-        <item itemvalue="Cucumber Java.Scenario: As a user, I am able to create an item or a service" />
-        <item itemvalue="Cucumber Java.Scenario: As a user, I am able to successfully enter Description" />
         <item itemvalue="Cucumber Java.Scenario: As a user, I am to verify Items tab functionality" />
+        <item itemvalue="Cucumber Java.Feature: ItemFunctionality" />
+        <item itemvalue="Cucumber Java.Feature: LoginManagement" />
+        <item itemvalue="Cucumber Java.Feature: UIComponentsFeature" />
+        <item itemvalue="JUnit.TestRunner" />
       </list>
     </recent_temporary>
   </component>
@@ -230,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696273418803</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Edited scenarios">
+      <created>1696538250350</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1696538250350</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -238,6 +239,7 @@
     <MESSAGE value="Finished UI Components Scenario" />
     <MESSAGE value="Finished Add Item Test case" />
     <MESSAGE value="Finished Item Functionality Verification scenario" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished Item Functionality Verification scenario" />
+    <MESSAGE value="Edited scenarios" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited scenarios" />
   </component>
 </project>

@@ -1,6 +1,5 @@
 # new feature
 # Tags: optional
-
 Feature: Access management
 @validLogin
   Scenario: User should be able to login with valid credentials
