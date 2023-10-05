@@ -49,7 +49,7 @@ public class LoginFunctionality {
     }
     @Then("I should not be logged in")
     public void i_should_not_be_logged_in() {
-        assertTrue(login.login_page_login_btn.isDisplayed());
+        assertTrue(login.login_page_footerText.isDisplayed());
     }
 //invalid login test end
 }

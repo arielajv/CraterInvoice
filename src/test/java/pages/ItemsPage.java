@@ -84,5 +84,44 @@ public class ItemsPage {
     @FindBy (xpath = "(//ul[contains(@class, 'list-none')])[2]/li")
     public List<WebElement> items_dropdown_options;
 
+@FindBy (xpath = "//span[text()='Name must have at least 3 letters.']")
+    public WebElement items_name_error;
+
+    @FindBy (xpath = "//textarea[@name='description']")
+    public WebElement description;
+
+    @FindBy (className = "bg-multiselect-caret")
+    public WebElement unitField;
+
+    @FindBy (xpath = "//input[@id='0']")
+    public WebElement items_input_page_price_box;
+
+    @FindBy (xpath = "//span[text()='stone']")
+    public WebElement items_input_page_unit_stone_option;
+
+    @FindBy (xpath = "//button[text()=' Save Item']")
+    public WebElement items_page_saveItem_btn;
+
+    @FindBy (xpath = "//input[@name='name']")
+    public WebElement items_page_filter_name_box;
+
+    @FindBy (xpath = "//p[contains(text(), 'Success!')]")
+    public WebElement items_success_message;
+
+    @FindBy (xpath = "//input[@type='checkbox']")
+    public List<WebElement> items_checkbox;
+
+    @FindBy (partialLinkText = "/admin/items/")
+    public List<WebElement> name_table_column;
+
+@FindBy (className = "min-w-full")
+    public WebElement items_page_table;
+
+    @FindBy (tagName = "td")
+    public List<WebElement> table_content;
+
+    @FindBy (tagName = "th")
+    public List<WebElement> title_rows;
+
 
 }

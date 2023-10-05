@@ -4,7 +4,9 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.CraterLoginPage;
@@ -16,9 +18,9 @@ import utils.TestDataReader;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.zip.CheckedOutputStream;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
+import static org.junit.Assert.*;
 
 public class ItemFunctionality {
     BrowserUtilityClass utils = new BrowserUtilityClass();
@@ -28,12 +30,14 @@ public class ItemFunctionality {
 
     ItemsPage items = new ItemsPage();
 
+    static String itemName;
+
     @Given("As an entity user, I am logged in")
     public void as_an_entity_user_i_am_logged_in() {
         Driver.getDriver().get(TestDataReader.getProperty("craterurl"));
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         Driver.getDriver().manage().window().maximize();
-        utils.waitForElementToBeVisible(login.login_page_email_box);
+        utils.waitForElementToBeVisible(login.login_page_footerText);
 
         utils.sendkeysWithActionClass(login.login_page_email_box, TestDataReader.getProperty("email"));
         utils.sendkeysWithActionClass(login.login_page_password_box, TestDataReader.getProperty("password"));
@@ -131,16 +135,85 @@ public class ItemFunctionality {
 
     @Then("I confirm that the unit dropdown has {int} options")
     public void i_confirm_that_the_unit_dropdown_has_options(Integer int1) {
-        items.items_unit_dropdown.click();;
+        items.items_unit_dropdown.click();
+        ;
         System.out.println(items.items_dropdown_options.size());
         int expectedNumberOfOptions = 20;
         assertEquals(items.items_dropdown_options.size(), expectedNumberOfOptions);
 
-        }
+    }
 
     @Then("I confirm that Description is displayed")
     public void i_confirm_that_description_is_displayed() {
         assertTrue(items.items_description_text.isDisplayed());
     }
+
+    //verify Name field input valid starts here
+
+    @Then("I enter valid {string}")
+    public void i_enter_valid(String name) {
+        utils.waitForElementToBeVisible(items.items_nameField);
+        items.items_nameField.sendKeys(name);
+    }
+
+    @Then("I verify I enter the name successfully")
+    public void i_verify_i_enter_the_name_successfully() {
+        assertFalse(items.items_name_error.isDisplayed());
+    }
+
+    //verify Name field input invalid starts here
+    @Then("I enter invalid name")
+    public void i_enter_invalid_name() {
+        items.items_nameField.sendKeys("C");
+    }
+
+    @Then("I should see an error message Name must have at least {int} letters.")
+    public void i_should_see_an_error_message_name_must_have_at_least_letters(Integer int1) {
+        assertTrue(items.items_name_error.isDisplayed());
+    }
+
+    //verify description field valid
+    @Then("I enter valid {string} into Description field")
+    public void i_enter_valid_into_description_field(String description) {
+        utils.waitForElementToBeVisible(items.description);
+        items.description.sendKeys(description);
+        Driver.quitDriver();
+    }
+
+    //create a new item test case
+    @When("I provide item information name {string}, price {string}, unit {string}, and description {string}")
+    public void i_provide_item_information_name_price_unit_and_description(String name, String price, String unit, String description) {
+        itemName = name;
+        items.items_nameField.sendKeys(itemName);
+        items.items_input_page_price_box.sendKeys("1.00");
+        items.items_unit_dropdown.click();
+        utils.waitForElementToBeVisible(items.items_input_page_unit_stone_option);
+        items.items_input_page_unit_stone_option.click();
+        items.description.sendKeys("Frappe latte cup");
+    }
+
+    @When("I click Save Item button")
+    public void i_click_save_item_button() {
+        items.items_page_saveItem_btn.click();
+    }
+
+    @Then("I verify the Item created successfully message")
+    public void i_verify_the_item_created_successfully_message() {
+        utils.waitForElementToBeVisible(items.items_success_message);
+        assertTrue(items.items_success_message.isDisplayed());
+    }
+
+    @Then("The Item is added to the Item list table")
+    public void the_item_is_added_to_the_item_list_table() {
+        utils.waitForElementToBeVisible(items.items_page_item_headerText);
+        Assert.assertTrue(items.items_page_item_headerText.isDisplayed());
+        items.items_page_filter_btn.click();
+        utils.waitForElementToBeVisible(items.items_page_filter_name_box);
+        items.items_page_filter_name_box.sendKeys(itemName);
+        utils.waitUntilElementVisibleWithLocator(By.xpath("//a[contains(text(), '" + itemName + "')]"));
+        Assert.assertTrue(Driver.getDriver().findElement(By.xpath("//a[contains(text(), '" + itemName + "')]")).isDisplayed());
+
+    }
+
 }
 
