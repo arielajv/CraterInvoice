@@ -1,5 +1,6 @@
 # new feature
 # Tags: optional
+  @Regression
 Feature: Access management
 @validLogin
   Scenario: User should be able to login with valid credentials
