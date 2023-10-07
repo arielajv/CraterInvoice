@@ -1,4 +1,4 @@
-@Regression
+
 Feature: Dashboard home page
 
     Background:
