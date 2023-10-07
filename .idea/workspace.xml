@@ -5,11 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c48af62e-7810-4ac6-af6d-f0532b9286e0" name="Changes" comment="Edited scenarios">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/runners/TestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/ItemFunctionality.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginManagement.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginManagement.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/UIComponentsFeature.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/UIComponentsFeature.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -250,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1696542104951</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Edited scenarios">
+      <created>1696555511958</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1696555511958</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
